@@ -1,0 +1,75 @@
+:root {
+  --time-duration: 9s;
+}
+body {
+  background-color: #222;
+  margin: 0px;
+}
+body::-webkit-scrollbar {
+  overflow: hidden;
+  display: none;
+}
+h3 {
+  margin: 0px;
+}
+#rod-one {
+  transition: linear 0.1s;
+  position: absolute;
+  top: 0%;
+  background-color: #f33170;
+  border: 2px solid #fff;
+  width: 20vw;
+  box-sizing: border-box;
+  border-radius: 20px;
+  height: 5vh;
+  padding: 5px;
+  text-align: center;
+}
+#rod-two {
+  transition: linear 0.1s;
+  position: absolute;
+  bottom: 0%;
+  background-color: #f33170;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  width: 20vw;
+  box-sizing: border-box;
+  height: 5vh;
+  padding: 5px;
+  text-align: center;
+}
+#ball {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  border-radius: 50%;
+  background-image: radial-gradient(#23d8f7 0%, #85edff 100%);
+  box-sizing: border-box;
+}
+#saurabh {
+  text-align: center;
+  z-index: -20;
+  color: #ddd;
+  font-size: 5vh;
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, 50%);
+}
+
+.animate-top-right {
+  transition: transform linear var(--time-duration);
+  transform: translateX(2000px) translateY(-2000px);
+}
+.animate-bottom-right {
+  transition: transform linear var(--time-duration);
+  transform: translateX(2000px) translateY(2000px);
+}
+.animate-top-left {
+  transition: transform linear var(--time-duration);
+  transform: translateX(-2000px) translateY(-2000px);
+}
+.animate-bottom-left {
+  transition: transform linear var(--time-duration);
+  transform: translateX(-2000px) translateY(2000px);
+}
